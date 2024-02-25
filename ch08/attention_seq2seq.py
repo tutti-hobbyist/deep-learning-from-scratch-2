@@ -1,6 +1,7 @@
 # coding: utf-8
 import sys
-sys.path.append('..')
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from common.time_layers import *
 from ch07.seq2seq import Encoder, Seq2seq
 from ch08.attention_layer import TimeAttention

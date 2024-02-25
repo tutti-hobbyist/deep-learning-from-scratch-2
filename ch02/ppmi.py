@@ -1,6 +1,7 @@
 # coding: utf-8
 import sys
-sys.path.append('..')
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 import numpy as np
 from common.util import preprocess, create_co_matrix, cos_similarity, ppmi
 

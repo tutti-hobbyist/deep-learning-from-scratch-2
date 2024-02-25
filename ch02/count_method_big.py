@@ -1,6 +1,7 @@
 # coding: utf-8
 import sys
-sys.path.append('..')
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 import numpy as np
 from common.util import most_similar, create_co_matrix, ppmi
 from dataset import ptb

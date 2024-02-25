@@ -1,6 +1,10 @@
 # coding: utf-8
 import sys
-sys.path.append('..')  # 親ディレクトリのファイルをインポートするための設定
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__))) # どのようにフォルダ展開しても使用可能
+# sys.path.append("..") # オリジナル表記 (Ch01をフォルダ展開した場合に使用)
+# sys.path.append(".") # 別表記 (Deep-learning-from-scratchをフォルダ展開した場合に使用)
+# print(sys.path)
 from dataset import spiral
 import matplotlib.pyplot as plt
 
